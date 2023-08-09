@@ -1,6 +1,5 @@
-export async function GET(request: Request, {params}) {
-    console.log(params);
-    const data = await fetch(`https://dummy.restapiexample.com/api/v1/employee/${params.userId}`);
+export async function GET(request: Request) {
+    const data = await fetch(`https://dummy.restapiexample.com/api/v1/employee/1`);
     const jsonData = await data.json();
 
     // Convert JSON data to a string
