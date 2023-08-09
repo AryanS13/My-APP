@@ -1,5 +1,5 @@
 async function getData() {
-    const data = await fetch('http://localhost:3001/api/1');
+    const data = await fetch('https://dummy.restapiexample.com/api/v1/employee/1');
     const jsonData = await data.json();
     return jsonData;
   }
